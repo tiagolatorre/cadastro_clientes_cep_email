@@ -1,0 +1,26 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de Clientes com busca de CEP e Envio de XML por Email'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object MainMenu1: TMainMenu
+    Left = 304
+    Top = 224
+    object mnuCadastro: TMenuItem
+      Text = 'Cadastro'
+      object mnuCadastroClientes: TMenuItem
+        Locked = True
+        Text = 'Cadastro de Clientes'
+        OnClick = mnuCadastroClientesClick
+      end
+    end
+  end
+end

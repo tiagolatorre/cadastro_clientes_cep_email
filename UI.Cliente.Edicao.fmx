@@ -1,0 +1,369 @@
+object frmClienteEdicao: TfrmClienteEdicao
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de Clientes'
+  ClientHeight = 583
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object GroupBox1: TGroupBox
+    Align = MostTop
+    Size.Width = 640.000000000000000000
+    Size.Height = 169.000000000000000000
+    Size.PlatformDefault = False
+    Text = ' Dados Pessoais: '
+    TabOrder = 0
+    object Email: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Email'
+      TabOrder = 5
+    end
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nome'
+      TabOrder = 6
+    end
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Identidade'
+      TabOrder = 7
+    end
+    object Label3: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'CPF'
+      TabOrder = 8
+    end
+    object Label4: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Telefone'
+      TabOrder = 9
+    end
+    object txtCPF: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 160.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object txtEmail: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Position.X = 160.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object txtIdentidade: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 160.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object txtNome: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 160.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object txtTelefone: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Position.X = 160.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object grpEndereco: TGroupBox
+    Align = Top
+    Position.Y = 169.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 224.000000000000000000
+    Size.PlatformDefault = False
+    Text = ' Endere'#231'o: '
+    TabOrder = 1
+    object txtCEP: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 160.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label6: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'CEP'
+      TabOrder = 16
+    end
+    object btnBuscarCEP: TButton
+      Position.X = 384.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 1
+      Text = 'Buscar CEP'
+      OnClick = btnBuscarCEPClick
+    end
+    object txtLogradouro: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 160.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label5: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Logradouro'
+      TabOrder = 15
+    end
+    object txtNumero: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Position.X = 160.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label7: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'N'#250'mero'
+      TabOrder = 14
+    end
+    object txtComplemento: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Position.X = 160.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label8: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Complemento'
+      TabOrder = 13
+    end
+    object txtBairro: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 5
+      Position.X = 160.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label9: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Bairro'
+      TabOrder = 12
+    end
+    object txtCidade: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Position.X = 160.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label10: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Cidade'
+      TabOrder = 11
+    end
+    object Label11: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Estado'
+      TabOrder = 10
+    end
+    object txtPais: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 8
+      Position.X = 160.000000000000000000
+      Position.Y = 192.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label12: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 192.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Pa'#237's'
+      TabOrder = 9
+    end
+    object cboEstado: TComboBox
+      Items.Strings = (
+        'RO'
+        'AC'
+        'AM'
+        'RR'
+        'PA'
+        'AP'
+        'TO'
+        'MA'
+        'PI'
+        'CE'
+        'RN'
+        'PB'
+        'PE'
+        'AL'
+        'SE'
+        'BA'
+        'MG'
+        'ES'
+        'RJ'
+        'SP'
+        'PR'
+        'SC'
+        'RS'
+        'MS'
+        'MT'
+        'GO'
+        'DF')
+      Position.X = 160.000000000000000000
+      Position.Y = 168.000000000000000000
+      TabOrder = 7
+    end
+  end
+  object pnlBotoes: TPanel
+    Align = Bottom
+    Position.Y = 396.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object btnSalvarEnviarEmail: TButton
+      Align = Left
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = '&Salvar e Enviar Email'
+      OnClick = btnSalvarEnviarEmailClick
+    end
+    object btnCancelar: TButton
+      Align = Left
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 161.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Cancelar'
+      OnClick = btnCancelarClick
+    end
+  end
+  object Panel1: TPanel
+    Align = MostBottom
+    Position.Y = 452.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 131.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Grid1: TGrid
+      Align = Client
+      CanFocus = True
+      ClipChildren = True
+      Size.Width = 640.000000000000000000
+      Size.Height = 131.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      RowCount = 0
+      Viewport.Width = 636.000000000000000000
+      Viewport.Height = 106.000000000000000000
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dtmDaoCliente.cdsCliente
+    ScopeMappings = <>
+    Left = 456
+    Top = 256
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 540
+    Top = 221
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
+  end
+end
